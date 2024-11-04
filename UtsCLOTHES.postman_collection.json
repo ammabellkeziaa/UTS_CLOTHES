@@ -1,0 +1,581 @@
+{
+	"info": {
+		"_postman_id": "dc71b469-837a-4b81-926b-2c1f5d6557d0",
+		"name": "UtsCLOTHES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39324325"
+	},
+	"item": [
+		{
+			"name": "http://localhost/clothes/clothes.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/clothes/clothes.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"clothes",
+						"clothes.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/clothes/clothes.php",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/clothes/clothes.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clothes",
+								"clothes.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:20:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, sizeization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "268"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"kaos berkerah\",\n        \"size\": \"M\",\n        \"prize\": 35,\n        \"stok\": 10\n    },\n    {\n        \"id\": 2,\n        \"name\": \"hoodie\",\n        \"size\": \"L\",\n        \"prize\": 210,\n        \"stok\": 15\n    },\n    {\n        \"id\": 3,\n        \"name\": \"kemeja lengan panjang\",\n        \"size\": \"S\",\n        \"prize\": 150,\n        \"stok\": 12\n    },\n    {\n        \"id\": 4,\n        \"name\": \"kemeja lengan pendek\",\n        \"size\": \"L\",\n        \"prize\": 150,\n        \"stok\": 10\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/clothes/clothes.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"kaos berkerah\",\r\n        \"size\": \"L\",\r\n        \"prize\": 75,\r\n        \"stok\": 8\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/clothes/clothes.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"clothes",
+						"clothes.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/clothes/clothes.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"kaos berkerah\",\r\n        \"size\": \"M\",\r\n        \"prize\": 75,\r\n        \"stok\": 8\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/clothes/clothes.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clothes",
+								"clothes.php"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:24:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, sizeization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"clothes created\",\n    \"id\": \"5\"\n}"
+				},
+				{
+					"name": "http://localhost/clothes/clothes.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"kaos berkerah\",\r\n        \"size\": \"L\",\r\n        \"prize\": 75,\r\n        \"stok\": 8\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/clothes/clothes.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clothes",
+								"clothes.php"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:30:23 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, sizeization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"clothes created\",\n    \"id\": \"6\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/clothes/clothes.php/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/clothes/clothes.php/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"clothes",
+						"clothes.php",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/clothes/clothes.php/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/clothes/clothes.php/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clothes",
+								"clothes.php",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:26:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, sizeization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"hoodie\",\n    \"size\": \"L\",\n    \"prize\": 210,\n    \"stok\": 15\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/clothes/clothes.php/5",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"kaos berkerah\",\r\n    \"size\": \"L\",\r\n    \"prize\": 75,\r\n    \"stok\": 25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/clothes/clothes.php/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"clothes",
+						"clothes.php",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/clothes/clothes.php/5",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"kaos berkerah\",\r\n    \"size\": \"L\",\r\n    \"prize\": 75,\r\n    \"stok\": 25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/clothes/clothes.php/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clothes",
+								"clothes.php",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:31:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, sizeization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"clothes updated\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/clothes/clothes.php/6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/clothes/clothes.php/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"clothes",
+						"clothes.php",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/clothes/clothes.php/6",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/clothes/clothes.php/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clothes",
+								"clothes.php",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:33:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, sizeization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"clothes deleted\"\n}"
+				}
+			]
+		}
+	]
+}
